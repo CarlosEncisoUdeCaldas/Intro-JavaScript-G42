@@ -5,70 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica G42</title>
-
-    <script>
-
-    </script>
+    <!-- codigo javascript dentro de la etiqueta Script -->
+    <script></script>
   </head>
   <body>
     <header>
-        <h1 style="text-align: center;">EJERCICIOS DE PRACTICA CON JAVASCRIPT G42</h1>
+      <h1 style="text-align: center">
+        EJERCICIOS DE PRACTICA CON JAVASCRIPT G42
+      </h1>
     </header>
     <main>
-        <h2>Cambiando el contenido de una etiqueta HTML con JS</h2>
-        <p id="demo">Texto Original</p>
-        <button onclick=" document.getElementById('demo').innerHTML = 'Texto cambiado por JavaScript' ">Cambiar Texto</button>
-        <button onclick=" document.getElementById('demo').innerHTML = 'Texto Original' ">Texto Original</button>
-        
-        <hr>
-        
-        <h2>Cambiando valores de un atributo HTML con JavaScript</h2>
-        <button onclick=" document.getElementById('imagen').src = 'img/on.gif' ">Encender</button>
-        <img src="img/off.gif" alt="Bombillo" id="imagen">
-        <button onclick=" document.getElementById('imagen').src = 'img/off.gif' ">Apagar</button>
-        
-        <hr>
+      <h2>Cambiando el contenido de una etiqueta HTML con JS</h2>
+      <p id="demo">Texto Original</p>
+      <button onclick=" cambiarTexto() ">Cambiar Texto</button>
+      <button onclick=" volverTexto() ">Texto Original</button>
 
-        <h2>Cambiando los estilos CSS de una etiqueta HTML con JavaScript</h2>
-        <p id="estilo">Texto con su tamaño Original</p>
-        <button onclick=" cambiarSize() ">Cambiar Tamaño</button>
-        <button onclick=" document.getElementById('estilo').style.fontSize = '' ">Tamaño Original</button>
+      <hr />
 
-        <hr>
+      <h2>Cambiando valores de un atributo HTML con JavaScript</h2>
+      <button onclick=" onLight() ">Encender</button>
+      <img src="img/off.gif" alt="Bombillo" id="imagen" />
+      <button onclick=" offLight() ">Apagar</button>
 
-        <h2>Cambiando el despliegue de una etiqueta HTML con JavaScript</h2>
+      <hr />
 
-        <div id="despliegue">
-            <p>Texto de prueba para ocultar</p>
-            <img src="img/NewYork.jpeg" alt="" width="300">            
-        </div>
+      <h2>Cambiando los estilos CSS de una etiqueta HTML con JavaScript</h2>
+      <p id="estilo">Texto con su tamaño Original</p>
+      <button onclick=" cambiarSize() ">Cambiar Tamaño</button>
+      <button onclick=" regresarSize() ">Tamaño Original</button>
 
-        <br>
+      <hr />
 
-        <button onclick=" document.getElementById('despliegue').style.display = 'none' ">Ocultar</button>
-        <button onclick=" document.getElementById('despliegue').style.display = 'block' ">Mostrar</button>
-        
-        <hr>
+      <h2>Cambiando el despliegue de una etiqueta HTML con JavaScript</h2>
 
-        <p id="demo1"></p>
+      <div id="despliegue">
+        <p>Texto de prueba para ocultar</p>
+        <img src="img/NewYork.jpeg" alt="" width="300" />
+      </div>
 
+      <br />
+
+      <button onclick=" ocultarEtiqueta() ">Ocultar</button>
+      <button onclick=" mostrarEtiqueta() ">Mostrar</button>
+
+      <hr />
+
+      <p id="demo1"></p>
     </main>
-    <footer>
-        
-    </footer>
-    
+    <footer></footer>
+
     <script>
-        document.getElementById('demo1').innerHTML = "Texto insertando desde un Script";
-
-        function cambiarSize() {
-            document.getElementById('estilo').style.fontSize = '35px';
-            document.getElementById('estilo').innerHTML = "Texto cambiado a 35px"
-            console.log("Hola mundo");
-        }
-        
-
-        // let texto = ` Entonces ella dijo: "Vamos pa' la casa" `
-        // console.log(texto);
+      //codigo JavaScript Outline dentro de la etiqueta Script
+      document.getElementById("demo1").innerHTML =
+        "Texto insertando desde un Script";
     </script>
-</body>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

@@ -17,22 +17,22 @@
     <main>
       <h2>Cambiando el contenido de una etiqueta HTML con JS</h2>
       <p id="demo">Texto Original</p>
-      <button onclick=" cambiarTexto() ">Cambiar Texto</button>
-      <button onclick=" volverTexto() ">Texto Original</button>
+      <button onclick=" changeText('Texto cambiado por JavaScript') ">Cambiar Texto</button>
+      <button onclick=" changeText('Texto Original') ">Texto Original</button>
 
       <hr />
 
       <h2>Cambiando valores de un atributo HTML con JavaScript</h2>
-      <button onclick=" onLight() ">Encender</button>
+      <button onclick=" OnOff('img/on.gif') ">Encender</button>
       <img src="img/off.gif" alt="Bombillo" id="imagen" />
-      <button onclick=" offLight() ">Apagar</button>
+      <button onclick=" OnOff('img/off.gif') ">Apagar</button>
 
       <hr />
 
       <h2>Cambiando los estilos CSS de una etiqueta HTML con JavaScript</h2>
       <p id="estilo">Texto con su tamaño Original</p>
-      <button onclick=" cambiarSize() ">Cambiar Tamaño</button>
-      <button onclick=" regresarSize() ">Tamaño Original</button>
+      <button onclick=" changeSize('35px','Texto cambiado a 35px') ">Cambiar Tamaño</button>
+      <button onclick=" changeSize('','Texto con su tamaño Original') ">Tamaño Original</button>
 
       <hr />
 
@@ -45,8 +45,8 @@
 
       <br />
 
-      <button onclick=" ocultarEtiqueta() ">Ocultar</button>
-      <button onclick=" mostrarEtiqueta() ">Mostrar</button>
+      <button onclick=" showLabel('none') ">Ocultar</button>
+      <button onclick=" showLabel('block') ">Mostrar</button>
 
       <hr />
 

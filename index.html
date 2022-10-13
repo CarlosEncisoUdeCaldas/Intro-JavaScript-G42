@@ -49,15 +49,20 @@
       <button onclick=" showLabel('block') ">Mostrar</button>
 
       <hr />
-
+      <h2>Espacio para los botones de visualizacion</h2>
       <p id="demo1"></p>
+      <button onclick="document.getElementById('demo1').innerHTML='Texto insertando desde un Script'">inner HTML</button>
+      <button onclick="document.write('Hola Mundo, esto es document write')">document.write</button>
+      <button onclick="window.alert('Este es un mensaje de alerta')">Button Alert</button>
+      <button onclick="console.log('mensaje desde la consola')">Console Log</button>
+      <button onclick="console.warn('mensaje de warning')">Console Warning</button>
+      <button onclick="window.print()">Print document</button>
     </main>
     <footer></footer>
 
     <script>
       //codigo JavaScript Outline dentro de la etiqueta Script
-      document.getElementById("demo1").innerHTML =
-        "Texto insertando desde un Script";
+      
     </script>
 
     <script src="js/script.js"></script>

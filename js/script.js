@@ -63,3 +63,7 @@ function OnOff(rutaImagen) {
 function showLabel(texto) {
     document.getElementById('despliegue').style.display = texto;
 }
+// Estudiar estos dos señores 
+// SPRING BOOT
+// Node JS
+// Principios de Programacion -SOLID

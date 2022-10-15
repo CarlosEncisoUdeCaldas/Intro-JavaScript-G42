@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica G42</title>
+    <!-- codigo javascript dentro de la etiqueta Script -->
+    <script></script>
+  </head>
+  <body>
+    <script>
+      //objetos y arrays
+      //esto si se puede hacer con los objetos, moficar valores según su clave
+      const car = {
+        type:'fiat',
+        model:'500',
+        color:'white',
+      }
+      console.log(car);
+      car.type = 'Ferrari';
+      car.model = 'SP48';
+      car['color'] = 'black';
+      console.log(car);
+
+      //uso del template string para crear cadenas de texto combinadas con variables
+      const texto = `Su carro es marca ${car.type}, modelo ${car.model} de color ${car.color}`;
+      console.log(texto);
+
+    
+      // const objetos = { 
+      //   userName: 'Pepito', 
+      //   password: '123'
+      // };
+      // console.log(objetos);
+      // console.log(objetos.userName);
+      // console.log(objetos.password);
+
+      // objetos.userName = 'Bob Sponge'
+      // console.log(objetos);
+      // objetos.password = 'Bahia Bikini'
+      // console.log(objetos);
+
+      // // objetos.email = 'bob@gmail.com'; //esto es correcto para agregar una nueva clave:valor
+      // objetos['email'] = 'bob@gmail.com'; //esto tambien es valido, es igual a la linea anterior
+      // console.log(objetos['userName']);
+
+
+
+      //esto si se puede hacer con los arrays, modificar valores segun posicion
+      // const arreglos = ['Panther','Picapiedra','Mordekai'];
+      // console.log(arreglos);
+      // arreglos[0] = 'Goku';
+      // console.log(arreglos);
+      // arreglos.push('Ironman'); //insertar un elemento al final del arreglo
+      // arreglos.push('Hulk');
+      // console.log(arreglos);
+      // arreglos.pop(); //elimina el ultimo elemento del arreglo
+      // console.log(arreglos);
+      
+      
+      //los arrays no se pueden reasignar
+      // const arreglos = ['Panther','Picapiedra','Mordekai'];
+      // arreglos = ['Goku', 'Ironman'];
+
+      // los objetos no se pueden volver a redeclarar
+      // const objetos = { userName: 'Pepito', password: '123'};
+      // objetos = { marca: 'Ferrari', color:'rojo'}
+      
+    </script>
+  </body>
+</html>

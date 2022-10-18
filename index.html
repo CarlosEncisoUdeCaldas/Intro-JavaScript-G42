@@ -9,46 +9,20 @@
     <script></script>
   </head>
   <body>
+    
+    <div id="demo" style="font-size: 35px;"></div>
+
+
     <script>
-      //objetos y funciones dentro de otro objeto
-      const person01 = {
-        nombre: "Charles",
-        apellido: "Xavier",
-        id: 123,
-      };
-      
-       //uso del operador spread ...
-      // const person02 = person01; //sin operador spread
-      const person02 = {...person01};  //con operador spread
-      console.log(person01);
-      console.log(person02);
+      //funcion con expresion tipo flecha
+        saludar = () => console.log('Hola grupo 42'); 
+        
+        //funcion con declaracion tradicional
+        // function saludar(){
+        //   return console.log('Hola grupo 42');
+        // }
 
-      person02.nombre = 'Hulk';
-      person02.id = 456
-      console.log(person02);
-      console.log(person01); //voy a volver a imprimir el person01
-
-      person01.nombre = 'Ironman';
-      console.log(person01);
-      console.log(person02);
-
-      //objeto person
-      // const person = {
-        //   nombre: "Charles",
-      //   apellido: "Xavier",
-      //   id: 123,
-      //   address: {
-      //     lat: 5.214,
-      //     long: 265.32
-      //   },
-      //   fullName: function(){ 
-      //     return `Nombre completo es ${this.nombre} ${this.apellido}`
-      //   },
-
-      // };
-      // console.log(person.address);
-      // console.log(person.address.lat);
-      // console.log(person.address.long);
+        saludar();
     </script>
   </body>
 </html>

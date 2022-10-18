@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica G42</title>
+    <!-- codigo javascript dentro de la etiqueta Script -->
+    <script></script>
+  </head>
+  <body>
+    
+    <div id="demo" style="font-size: 35px;"></div>
+
+
+    <script>
+      // copiando arreglos dentro de otros arreglos
+      const numbers01 = [10,20,30,40,50]
+      console.log(numbers01);
+
+      const numbers02 = [...numbers01, 100, 500] //mi objetivo con esta copia es insertar los mismos valores del arraeglo numbers01
+      console.log(numbers02);
+
+      // console.log(numbers02.length);
+
+      let texto = '';
+      //recorrido  de un array con el ciclo for
+      for( let i = 0 ; i < numbers02.length ; i++ ){
+         texto += `<p> Posicion ${i}: ${ numbers02 [ i ] } </p>` ;
+        //texto = texto + `<p> Posicion ${i}: ${ numbers02 [ i ] } </p>` ; //esta linea es igual a la anterior
+      }
+
+      console.log(texto);
+      document.getElementById('demo').innerHTML = texto;
+
+      //los arrays tienen un metodo o funcion que se llama forEach
+      //el forEach recorre cada elemento del array a través de una funcion callback
+      //una funcion callback es una funcion dentro de otro funcion
+      numbers02.forEach( item => console.log (item) ) ; 
+      // numbers02.forEach( (item) => console.log( item )  ) ; //las llaves tambien las puedo quitar
+      // numbers02.forEach( (item) => { console.log( item ); } ) ; //como solo tengo una linea de retorno puedo quitar el return
+      // numbers02.forEach( (item) => { //quitamos la palabra function y agregamos la flecha despues de los parentesis
+        //       return console.log( item );
+        // } ) ;
+        // numbers02.forEach( function(item){ 
+          //       return console.log( item );
+          // } ) ;
+        
+      // numbers02.map( item => (item * 2) ) ;
+      
+      //diferencia entre forEach y  map 
+      // forEach no genera un nuevo array, en cambio map si genera un nuevo array
+      const recorridoForEach = numbers02.forEach( item => (item) ) ; 
+      const recorridoMap = numbers02.map( function(i) { 
+        return (i * 2) 
+      } ) ;
+
+      console.log(recorridoForEach);
+      console.log(recorridoMap);
+
+
+      // const fruit = {
+      //   name: "Fresa",
+      //   color: "Rojo",
+      // };
+
+      // const cars = [ 'Ford', 'Audi' , 'BMW']
+      // console.log(fruit);
+      // console.log(cars);
+
+      // //se le inserta un array completo a la etiqueta con el id demo, en este caso la etiqueta p
+      // document.getElementById('demo').innerHTML = cars ;
+      // // document.getElementById('demo').innerHTML = `El nombre de la fruta es ${fruit.name} y su color es ${fruit.color}` ;
+      // // document.getElementById('demo').innerHTML = JSON.stringify(fruit) ; //para mostrar un objeto en una etiqueta html debe
+      // console.log(fruit);
+
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica G42</title>
+    <!-- codigo javascript dentro de la etiqueta Script -->
+    <script></script>
+  </head>
+  <body>
+    <script>
+      const fruit = {
+        name: "Fresa",
+        color: "Rojo",
+      };
+      const cadenaTipoJson = JSON.stringify(fruit); //esto se usa mucho cuando se envian datos a un servidor
+
+      console.log(fruit);
+      console.log(`Este es el objeto fruit ${cadenaTipoJson}`);
+
+      //luego cuando el servidor lo recibe en formato tipo cadena, lo tiene que convertir a tipo objeto
+
+      const objetoFinal = JSON.parse(cadenaTipoJson);
+      console.log(objetoFinal);
+    </script>
+  </body>
+</html>
